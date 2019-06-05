@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eggApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdd-Bl-kOJ">
+                                <rect key="frame" x="37.5" y="70" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8Mq-r3-tt3"/>
+                                    <constraint firstAttribute="height" constant="50" id="xlh-LL-rWk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggk-qa-3qp">
+                                <rect key="frame" x="37.5" y="505" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CJ0-pH-RtS"/>
+                                    <constraint firstAttribute="width" constant="300" id="Gju-1h-hou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drf-cJ-rj2">
+                                <rect key="frame" x="12.5" y="155" width="350" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Fwc-9K-dF1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="egg01"/>
+                                <connections>
+                                    <action selector="eggbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBP-Ia-FIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pdd-Bl-kOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Uaz-hW-wFG"/>
+                            <constraint firstItem="ggk-qa-3qp" firstAttribute="top" secondItem="drf-cJ-rj2" secondAttribute="bottom" constant="50" id="Xm7-bS-v9Z"/>
+                            <constraint firstItem="Pdd-Bl-kOJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="geC-3S-eXd"/>
+                            <constraint firstItem="drf-cJ-rj2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iRI-au-W0e"/>
+                            <constraint firstItem="drf-cJ-rj2" firstAttribute="top" secondItem="Pdd-Bl-kOJ" secondAttribute="bottom" constant="35" id="sZI-v3-gXd"/>
+                            <constraint firstItem="ggk-qa-3qp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wLK-dX-UMq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="drf-cJ-rj2" id="rHe-0E-6wk"/>
+                        <outlet property="countlabel" destination="Pdd-Bl-kOJ" id="2QN-gF-Tok"/>
+                        <outlet property="messegelabel" destination="ggk-qa-3qp" id="0b1-sn-15E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="egg01" width="300" height="300"/>
+    </resources>
+</document>
